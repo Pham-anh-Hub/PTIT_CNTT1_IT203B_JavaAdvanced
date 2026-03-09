@@ -18,7 +18,6 @@ public class Main {
             SimpleDateFormat sdf = new SimpleDateFormat();
             String time = sdf.format((new Date()));
             System.err.println(e.getMessage() + " | " + time);
-
         }
     }
 }
