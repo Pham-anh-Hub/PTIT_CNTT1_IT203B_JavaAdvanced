@@ -7,7 +7,7 @@ public class Bai4 {
     static record User(String username, String email, String status){}
 
     public static void main(String[] args) {
-        Set<User> users = new HashSet<>();
+        List<User> users = new ArrayList<>();
         users.add(new User("alice", "alice@gmail.com", "STATUS"));
         users.add(new User("bob", "bob@yahoo.com", "INACTIVE"));
         users.add(new User("charlie", "charlie@gmail.com", "STATUS"));

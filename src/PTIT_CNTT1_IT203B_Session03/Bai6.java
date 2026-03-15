@@ -11,6 +11,7 @@ public class Bai6 {
         );
 
 
+        // Biến đổi từng list con về stream --> gộp thành 1 collection
         System.out.println(tags.stream().flatMap(List::stream).collect(Collectors.toList()));
 
     }
