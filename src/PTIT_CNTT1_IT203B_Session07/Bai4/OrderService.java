@@ -1,5 +1,6 @@
 package PTIT_CNTT1_IT203B_Session07.Bai4;
 
+import PTIT_CNTT1_IT203B_Session07.Bai1.Customer;
 import PTIT_CNTT1_IT203B_Session07.Bai1.Order;
 
 public class OrderService {
@@ -11,8 +12,8 @@ public class OrderService {
         this.noticeService = noticeService;
     }
 
-    public void createOrder(Order order){
+    public void createOrder(Order order, Customer customer){
         orderRepo.save(order);
-        noticeService.send(("Đơn hàng " + order.orderId + " đã được tạo"), "email@example.com ");
+        noticeService.send(("Đơn hàng " + order.orderId + " đã được tạo"), customer.getEmail());
     }
 }

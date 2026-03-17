@@ -54,6 +54,15 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Tính năng: Thêm phương thức thanh toán mới ");
+                    System.out.println("Chọn phương thức thanh toán mới: ");
+                    String pChoice = sc.nextLine();
+
+                    class newPayment implements PaymentMethod{
+                        @Override
+                        public void doPayment(double amount) {
+
+                        }
+                    };
                     break;
                 case 7:
                     System.out.println("Tính năng: Thêm chiến lược giảm giá mới");
@@ -178,6 +187,7 @@ public class Main {
                 case 1:
                     PaymentMethod pCod = new CODPayment();
                     pCod.doPayment(finalAmount);
+                    newOrder.status = true;
                     break;
                 case 2:
                     PaymentMethod pCreadit = new CreditCardPayment();

@@ -20,7 +20,7 @@ public class Order {
     }
 
     public Order() {
-        this.orderId = UUID.randomUUID().toString();
+        this.orderId = new StringBuilder().append("OR00").append(this.products.size() + 1).toString();
         this.products = new HashMap<>();
     }
 

@@ -11,6 +11,6 @@ public class Main {
 
         OrderService orderService = new OrderService(repo, notice);
 
-        orderService.createOrder(new Order(new Customer("example@gmail.com", "Ha Noi")));
+        orderService.createOrder(new Order(new Customer("example@gmail.com", "Ha Noi")), new Customer("example@gmail.com", "Ha Noi"));
     }
 }

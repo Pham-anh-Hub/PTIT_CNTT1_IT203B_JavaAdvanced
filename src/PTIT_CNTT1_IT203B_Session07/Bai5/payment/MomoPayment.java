@@ -9,4 +9,11 @@ public class MomoPayment implements PaymentMethod{
         NumberFormat nf = NumberFormat.getNumberInstance();
         System.out.println("Thanh toán với MoMo: " + amount + "VND - Thành công");
     }
+
+//    @Override
+//    public void doPayment(Order order) {
+//        NumberFormat nf = NumberFormat.getNumberInstance();
+//        System.out.println("Thanh toán với MoMo: " + order.getTotalOrder() + "VND - Thành công");
+//        order.status = true; // Chuyển trạng thái thành đã thanh toán
+//    }
 }
